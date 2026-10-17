@@ -1,19 +1,20 @@
 <?php
 ob_start();
 ?>
-<div class="card shadow-sm border-0">
-    <div class="card-body p-4 p-md-5">
-        <h1 class="display-5 fw-bold">Welcome to Uiflow</h1>
-        <p class="lead text-muted">Your workspace for products, customers, staff and orders.</p>
-        <hr class="my-4">
-        <h2 class="h5 mb-3">Choose a page to get started</h2>
-        <div class="d-flex flex-wrap gap-2">
-            <a href="products.php" class="btn btn-primary">Products</a>
-            <a href="customers.php" class="btn btn-outline-primary">Customers</a>
-            <a href="staff.php" class="btn btn-outline-primary">Staff</a>
-            <a href="orders.php" class="btn btn-outline-primary">Orders</a>
-        </div>
-    </div>
+<style>
+.home-welcome {
+    min-height: calc(100vh - 3rem);
+}
+@media (max-width: 991.98px) {
+    .home-welcome {
+        min-height: calc(100vh - 7rem);
+    }
+}
+</style>
+<div class="home-welcome d-flex flex-column align-items-center justify-content-center text-center">
+    <img src="images/uiflow-logo-black.png" alt="Uiflow logo" width="140" height="140" class="mb-3">
+    <h1 class="h2 mb-2">Uiflow</h1>
+    <p class="small text-secondary mb-0">Welcome to the ordering system of Uiflow</p>
 </div>
 <?php
 $content = ob_get_clean();
