@@ -8,14 +8,12 @@
 <body>
   <div class="container-fluid p-0 min-vh-100">
     <div class="row g-0 min-vh-100">
- 
-      <div class="col-auto">
-      Put sidebar here.
+       
       <div id="mySidebar" class="col-auto bg-dark text-white offcanvas-lg offcanvas-start">
         <div class="p-4">
           <a href="#" class="navbar-brand">
             <div class="row">
-              <h5 class="">My Company</h5>
+              <h5 class="">Uiflow</h5>
             </div>
           </a>
           <hr>                  
@@ -33,6 +31,30 @@
               </a>
             </li>
             <!-- Add more menus -->
+             <li class="nav-item mb-3">
+              <a href="" class="text-decoration-none text-white">
+                <i class="bi bi-bar-chart-line-fill me-2"></i>
+                Products
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="text-decoration-none text-white">
+                <i class="bi bi-bar-chart-line-fill me-2"></i>
+                Customers
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="text-decoration-none text-white">
+                <i class="bi bi-bar-chart-line-fill me-2"></i>
+                staffs
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="text-decoration-none text-white">
+                <i class="bi bi-bar-chart-line-fill me-2"></i>
+                Orders
+              </a>
+            </li>
           </ul>
           <hr>                  
           <div class="dropdown">
@@ -56,9 +78,20 @@
         </div>
       </div>
  
+       <div class="col bg-light">
+        <!-- Mobile Header with Burger -->
+        <div id="myBurger" class="p-3 d-lg-none text-white bg-dark">
+          <div class="row">
+            <a href="#" class="text-white text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#mySidebar">
+              <i class="bi bi-list"></i><h5 class="ms-3 d-inline">Uiflow</h5>
+            </a>
+          </div>
+        </div>
+         
+        <div class="p-4">
+          Put content here.
+        </div>
       </div>
- 
-      <div class="col">Put content here.</div>
  
     </div>
   </div>
@@ -66,4 +99,3 @@
 </html>
  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
