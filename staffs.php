@@ -1,17 +1,17 @@
 <?php
 ob_start();
 ?>
- 
+
 <div class="card shadow border-0 border-start border-5 border-primary mb-4">
     <div class="card-body">
-        <h2 class="mb-1">Staff</h2>
+        <h2 class="mb-1">Staffs</h2>
         <p class="text-muted mb-0">Manage and track all your staff members</p>
     </div>
 </div>
- 
+
 <div class="card shadow-sm mb-4">
     <div class="card-body">
- 
+
         <div class="row g-0 align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
@@ -24,9 +24,9 @@ ob_start();
                 <span class="badge bg-primary">* Required fields</span>
             </div>
         </div>
-         
+
         <hr>
- 
+
         <form action="" method="post" class="needs-validation" novalidate>
             <div class="row g-3">
                 <div class="col-md-3">
@@ -37,21 +37,21 @@ ob_start();
                     <label for="staff_name" class="form-label">Name <span class="text-danger" aria-hidden="true">*</span></label>
                     <input name="staff_name" id="staff_name" type="text" class="form-control" placeholder="Enter Staff Name" value="" required>
                 </div>
-                
+
                 <div class="col-md-3">
                     <label for="staff_phone" class="form-label">Phone Number <span class="text-danger" aria-hidden="true">*</span></label>
                     <input name="staff_phone" id="staff_phone" type="text" class="form-control" placeholder="Enter Phone Number" value="" required>
                 </div>
- 
+
                 <div class="col-md-3">
                     <label for="staff_email" class="form-label">Email Address <span class="text-danger" aria-hidden="true">*</span></label>
                     <input name="staff_email" id="staff_email" type="email" class="form-control" placeholder="Enter Email Address" value="" required>
                 </div>
-              
+
             </div>
 
             <hr class="mt-4 mb-3">
-             
+
             <div>
                 <button type="submit" name="create" class="btn btn-primary">
                     <i class="bi bi-save me-1"></i>Create
@@ -66,7 +66,7 @@ ob_start();
 
 <div class="card shadow-sm">
     <div class="card-body">
-  
+
         <div class="row align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
@@ -76,19 +76,19 @@ ob_start();
                 <small class="text-muted">View and manage all staff members</small>
             </div>
             <div class="col-auto">
-                <span class="badge bg-success">Total: 1 items</span>
+                <span class="badge bg-success">Total: 1 item</span>
             </div>
         </div>
- 
+
         <hr>
- 
+
         <div class="table-responsive">
             <table class="table table-striped table-hover">
                 <thead class="table-dark">
                     <tr>
                         <th>Staff ID</th>
                         <th>Name</th>
-                        
+
                         <th>Phone</th>
                         <th>Email</th>
                         <th>Actions</th>
@@ -111,9 +111,6 @@ ob_start();
                                 <i class="bi bi-trash"></i>
                             </a>
                         </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="text-center">No products found</td>
                     </tr>
                 </tbody>
             </table>

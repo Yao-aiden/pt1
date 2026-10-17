@@ -1,17 +1,17 @@
 <?php
 ob_start();
 ?>
- 
+
 <div class="card shadow border-0 border-start border-5 border-primary mb-4">
     <div class="card-body">
         <h2 class="mb-1">Orders</h2>
         <p class="text-muted mb-0">Manage and track all your orders</p>
     </div>
 </div>
- 
+
 <div class="card shadow-sm mb-4">
     <div class="card-body">
- 
+
         <div class="row g-0 align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
@@ -24,39 +24,35 @@ ob_start();
                 <span class="badge bg-primary">* Required fields</span>
             </div>
         </div>
-         
+
         <hr>
- 
+
         <form action="" method="post" class="needs-validation" novalidate>
             <div class="row g-3">
-                <div class="col-md-3">
-                    <label for="customer_num" class="form-label">Customer ID <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="customer_num" id="customer_num" type="text" class="form-control" placeholder="Enter Customer ID" value="" required>
+                <div class="col-md-4">
+                    <label for="order_num" class="form-label">Order ID <span class="text-danger" aria-hidden="true">*</span></label>
+                    <input name="order_num" id="order_num" type="text" class="form-control" placeholder="Enter Order ID" value="" required>
                 </div>
-                <div class="col-md-3">
-                    <label for="order_date" class="form-label">Order Date  <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="order_date" id="order_date" type="date" class="form-control" placeholder="Select Order Date " value="" >
-                </div>
-                <div class="col-md-3">
-                    <label for="staff" class="form-label">Staff <span class="text-danger" aria-hidden="true">*</span></label>
-                    <select name="staff" id="staff" class="form-select" required>
+                <div class="col-md-4">
+                    <label for="staff_num" class="form-label">Staff <span class="text-danger" aria-hidden="true">*</span></label>
+                    <select name="staff_num" id="staff_num" class="form-select" required>
                         <option value="">Select Staff</option>
-                        <option value="Jane Smith">Jane Smith</option>
+                        <option value="S001">Jane Smith</option>
                     </select>
                 </div>
-                <div class="col-md-3">
-                    <label for="customer" class="form-label">Customer <span class="text-danger" aria-hidden="true">*</span></label>
-                    <select name="customer" id="customer" class="form-select" required>
+                <div class="col-md-4">
+                    <label for="customer_num" class="form-label">Customer <span class="text-danger" aria-hidden="true">*</span></label>
+                    <select name="customer_num" id="customer_num" class="form-select" required>
                         <option value="">Select Customer</option>
-                        <option value="Alice Johnson">Alice Johnson</option>
+                        <option value="C001">Alice Johnson</option>
                     </select>
                 </div>
- 
-              
+
+
             </div>
 
             <hr class="mt-4 mb-3">
-             
+
             <div>
                 <button type="submit" name="create" class="btn btn-primary">
                     <i class="bi bi-save me-1"></i>Create
@@ -71,7 +67,7 @@ ob_start();
 
 <div class="card shadow-sm">
     <div class="card-body">
-  
+
         <div class="row align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
@@ -81,12 +77,12 @@ ob_start();
                 <small class="text-muted">View orders and their products</small>
             </div>
             <div class="col-auto">
-                <span class="badge bg-success">Total: 1 items</span>
+                <span class="badge bg-success">Total: 1 item</span>
             </div>
         </div>
- 
+
         <hr>
- 
+
         <div class="table-responsive">
             <table class="table table-striped table-hover">
                 <thead class="table-dark">
@@ -104,12 +100,12 @@ ob_start();
                         <td>2026-10-03</td>
                         <td>Jane Smith</td>
                         <td>Alice Johnson</td>
-                        
+
                         <td>
                             <a href="#" class="btn btn-sm btn-warning">
                                 <i class="bi bi-pencil"></i>
                             </a>
-                           
+
                             <a href="#" class="btn btn-sm btn-danger">
                                 <i class="bi bi-trash"></i>
                             </a>
@@ -122,9 +118,6 @@ ob_start();
 
 
                         </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="text-center">No products found</td>
                     </tr>
                 </tbody>
             </table>

@@ -1,7 +1,7 @@
 <?php require __DIR__ . '/header.php'; ?>
 <?php require __DIR__ . '/sidebar.php'; ?>
 
-       <div class="col bg-light">
+       <div class="col bg-light d-flex flex-column">
         <!-- Mobile Header with Burger -->
         <div id="myBurger" class="p-3 d-lg-none text-white bg-dark">
           <div class="row">
@@ -11,10 +11,9 @@
           </div>
         </div>
          
-        <div class="p-4">
-          <?= $content ?? 'Put content here.' ?>
+        <div class="p-4 flex-grow-1 d-flex flex-column">
+         <?= $content ?? '' ?>
         </div>
       </div>
  
-
 <?php require __DIR__ . '/footer.php'; ?>
